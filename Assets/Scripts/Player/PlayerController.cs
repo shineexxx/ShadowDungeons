@@ -94,6 +94,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Debug.Log(_inputVelocity);
         _rigidbody.velocity = new Vector2(_inputVelocity * Time.fixedDeltaTime, _rigidbody.velocity.y);
     }
 
